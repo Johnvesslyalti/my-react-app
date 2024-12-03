@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import HomeComponent from './home';
+import CoursesComponent from './courses';
 
 function App() {
+  const name = "John"
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HomeComponent />
+      <p style={{color:'blue',backgroundColor:'yellow'}}>{name}</p>
+      <h1 className="one">This is where we learnt about react.</h1>
+      <CoursesComponent />
     </div>
   );
 }
